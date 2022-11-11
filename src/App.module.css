@@ -1,0 +1,105 @@
+.wrapper {
+  max-width: 46rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+
+  margin-top: -1.5rem;
+}
+
+.addTask {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+
+  margin-bottom: 4rem;
+}
+
+.addTask input {
+  padding: 1rem;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  color: var(--gray-300);
+  
+  flex: 1;
+}
+
+.addTask button {
+  padding: 1rem;
+  border: 0;
+  border-radius: 8px;
+  color: var(--white);
+  background: var(--blue-400);
+
+  cursor: pointer;
+
+  transition: background 0.2s;
+}
+
+.addTask button:hover {
+  background: var(--blue-200);
+}
+
+.taskList {
+
+}
+
+.taskListHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.taskListHeaderCreated {
+  display: flex;
+  gap: 0.66rem;
+}
+
+.taskListHeaderCreated p {
+  color: var(--blue-200);
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.taskListHeaderCompleted {
+  display: flex;
+  gap: 0.66rem;
+}
+
+.taskListHeaderCompleted p {
+  color: var(--purple-100);
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.taskListHeaderCreated span, .taskListHeaderCompleted span {
+  background: var(--gray-400);
+  padding: 0 0.5rem;
+  border-radius: 1rem;
+}
+
+.taskListItems {
+  margin-top: 1.5rem;
+  height: 15rem;
+  line-height: 1.4;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.taskListItems img {
+  width: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.taskListItems p {
+  font-weight: bold;
+  color: var(--gray-300);
+} 
+
+.taskListItems span {
+  color: var(--gray-300);
+} 
