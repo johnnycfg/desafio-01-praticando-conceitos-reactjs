@@ -4,9 +4,12 @@ import styles from './App.module.css';
 import './styles/global.css';
 
 import ClipboardImg from './assets/Clipboard.svg';
+import { TaskListItem } from './components/TaskListItem/TaskListItem';
 
 
 function App() {
+  const taskListEmpty = false;
+
   return (
    <div>
       <Header />
@@ -33,9 +36,17 @@ function App() {
           </div>
 
           <div className={styles.taskListItems}>
-            <img src={ClipboardImg} />
-            <p>Você ainda não tem tarefas cadastradas</p>
-            <span>Crie tarefas e organize seus itens a fazer</span>
+            {taskListEmpty ? (
+              <>
+                <img src={ClipboardImg} />
+                <p>Você ainda não tem tarefas cadastradas</p>
+                <span>Crie tarefas e organize seus itens a fazer</span>
+              </>
+            ) : (
+              <>
+                <TaskListItem />
+              </>
+            )}
           </div>
         </div>
       </div>
